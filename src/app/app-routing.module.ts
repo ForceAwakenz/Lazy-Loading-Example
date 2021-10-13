@@ -4,6 +4,7 @@ import { MainComponent } from './main/main.component';
 
 const routes: Routes = [
   {path: '', component: MainComponent},
+  {path: 'takeout', loadChildren: () => import('./takeout/takeout.module').then(m => m.TakoutModule)},
 ];
 
 @NgModule({

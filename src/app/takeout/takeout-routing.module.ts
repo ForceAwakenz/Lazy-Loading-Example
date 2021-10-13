@@ -3,7 +3,7 @@ import { RouterModule, Routes } from "@angular/router";
 import { TakeoutComponent } from "./takeout.component";
 
 const routes: Routes = [
-    {path: 'takeout', component: TakeoutComponent}
+    {path: '', component: TakeoutComponent}
 ]
 
 @NgModule ({
