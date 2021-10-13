@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MainComponent } from './main/main.component';
-import { TakeoutComponent } from './takeout/takeout.component';
 
 const routes: Routes = [
   {path: '', component: MainComponent},
-  {path: 'takeout', component: TakeoutComponent},
+  {path: 'takeout', loadChildren: () => import('./takeout/takeout.module').then(m => m.TakeoutModule)},
 ];
 
 @NgModule({
