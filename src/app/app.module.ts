@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
+import { TakeoutRoutingModule } from './takeout/takeout-routing.module';
 import { TakoutModule } from './takeout/takeout.module';
 
 @NgModule({
@@ -14,7 +15,8 @@ import { TakoutModule } from './takeout/takeout.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    TakoutModule
+    TakoutModule,
+    TakeoutRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
